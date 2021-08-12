@@ -13,7 +13,7 @@ docker run \
 	--interactive \
 	--tty \
 	--rm \
-	--volume $(pwd):/project \
+	--volume /$(pwd):/project \
 	--name $CONTAINER_NAME \
 	$CONTAINER_NAME
 
